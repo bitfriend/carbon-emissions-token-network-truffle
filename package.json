@@ -1,0 +1,21 @@
+{
+  "name": "carbon-emissions-token-network-truffle",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@openzeppelin/contracts": "^3.4.1",
+    "@openzeppelin/contracts-upgradeable": "^3.4.1",
+    "@truffle/hdwallet-provider": "^1.2.6",
+    "bip39": "^3.0.3",
+    "dotenv": "^8.2.0"
+  },
+  "scripts": {
+    "mnemonic": "node -e \"console.log(require('bip39').generateMnemonic())\"",
+    "compile": "truffle compile",
+    "deploy": "truffle migrate --reset"
+  },
+  "devDependencies": {
+    "@openzeppelin/truffle-upgrades": "^1.6.0",
+    "truffle": "^5.3.4"
+  }
+}
